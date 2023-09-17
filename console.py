@@ -2,6 +2,7 @@
 """Contains the entry point of the command interpreter:"""
 import cmd
 import sys
+import os
 import json
 from models import storage
 from models.base_model import BaseModel
