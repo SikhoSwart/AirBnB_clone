@@ -33,8 +33,8 @@ class BaseModel:
 
     def __str__(self):
         """should print: [<class name>] (<self.id>) <self.__dict__>"""
-        return('[' + type(self).__name__ + '] (' + str(self.id) +
-               ') ' + str(self.__dict__))
+        return ('[' + type(self).__name__ + '] (' + str(self.id) +
+                ') ' + str(self.__dict__))
 
     def save(self):
         """ save function """
