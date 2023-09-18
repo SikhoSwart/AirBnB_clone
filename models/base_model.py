@@ -36,8 +36,8 @@ class BaseModel:
         return('[' + type(self).__name__ + '] (' + str(self.id) +
                ') ' + str(self.__dict__))
 
-        def save(self):
-            """ save function """
+    def save(self):
+        """ save function """
         self.updated_at = datetime.now()
         models.storage.save()
 
